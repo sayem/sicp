@@ -14,7 +14,6 @@ f(n) = f(n-1) + 2f(n-2) + 3f(n-3)  if n >= 3
 
 ; The following procedure computes it by means of an iterative process:
 
-
 (define (f n)
   (if (< n 3)
       n
