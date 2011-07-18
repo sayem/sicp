@@ -12,7 +12,7 @@
   (if (good-enough? guess x)
       guess
       (cubert-iter (improve guess x)
-		 x)))
+		   x)))
 
 (define (cubert x)
   (cubert-iter 1.0 x))

@@ -15,8 +15,7 @@ Pascal's triangle:
   (pascal a b))
 
 (define (pascal a b)
-  (cond ((= (or a b) 0) 0)
-	((> b a) 0)
-	((= b 1) 1)
-	((= a b) 1)
-	(else (+ (pascal (- a 1) (- b 1)) (pascal (- a 1) b)))))
+  (cond ((or (= a b) (= b 1)) 1)
+	((> b a) #f)
+	(else (+ (pascal (- a 1) (- b 1)) 
+		 (pascal (- a 1) b)))))
