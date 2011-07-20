@@ -1,0 +1,2 @@
+
+; timed prime test
