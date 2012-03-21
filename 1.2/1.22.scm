@@ -55,5 +55,4 @@
 ; (search-for-primes 1000000 1000050) => 1000003 (0.341s), 1000033 (0.337s), 1000037 (0.389s)
 
 
-; Testing for primes does support the notion that programs on my machine run in time proportional to the number of steps required for the computation, as the times for testing primes around 1000, 10000, 100000, and 1000000 are about 10^1/2 (3.1623) times longer in sequence. 
-
+; Testing for primes does support the notion that programs on my machine run in time proportional to the number of steps required for the computation, as the times for testing primes around 1000, 10000, 100000, and 1000000 are about 10^1/2 (3.1623) times longer in sequence.
