@@ -46,13 +46,13 @@
    (= (remainder n 2) 0))
 
 
-; (search-for-primes 1000 1020) => 1009 (0.014s), 1013 (0.014s), 1019 (0.013s)
+; (search-for-primes 1000 1020) => 1009 (0.014ms), 1013 (0.014ms), 1019 (0.013ms)
 
-; (search-for-primes 10000 10040) => 10007 (0.038s), 10009 (0.0378s), 10037 (0.0369s)
+; (search-for-primes 10000 10040) => 10007 (0.038ms), 10009 (0.0378ms), 10037 (0.0369ms)
 
-; (search-for-primes 100000 100050) => 100003 (0.102s), 100019 (0.1028s), 100043 (0.1021s)
+; (search-for-primes 100000 100050) => 100003 (0.102ms), 100019 (0.1028ms), 100043 (0.1021ms)
 
-; (search-for-primes 1000000 1000050) => 1000003 (0.341s), 1000033 (0.337s), 1000037 (0.389s)
+; (search-for-primes 1000000 1000050) => 1000003 (0.341ms), 1000033 (0.337ms), 1000037 (0.389ms)
 
 
 ; Testing for primes does support the notion that programs on my machine run in time proportional to the number of steps required for the computation, as the times for testing primes around 1000, 10000, 100000, and 1000000 are about 10^1/2 (3.1623) times longer in sequence.

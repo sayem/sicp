@@ -51,13 +51,13 @@
    (= (remainder n 2) 0))
 
 
-; (search-for-primes 1000 1020) => 1009 (0.0109s), 1013 (0.010s), 1019 (0.010s) ==> avg time = 0.0103s and avg time of 1.22 = 0.0136s
+; (search-for-primes 1000 1020) => 1009 (0.0109ms), 1013 (0.010ms), 1019 (0.010ms) ==> avg time = 0.0103ms and avg time of 1.22 = 0.0136ms
 
 
-; (search-for-primes 10000 10040) => 10007 (0.0258s), 10009 (0.0249s), 10037 (0.0251s) ==> avg time = 0.0253s and avg time of 1.22 = 0.0376s
+; (search-for-primes 10000 10040) => 10007 (0.0258ms), 10009 (0.0249ms), 10037 (0.0251ms) ==> avg time = 0.0253ms and avg time of 1.22 = 0.0376ms
 
 
-; (search-for-primes 100000 100050) => 100003 (0.0742s), 100019 (0.0720s), 100043 (0.0729s) ==> avg time = 0.073s and avg time of 1.22 = 0.1023s
+; (search-for-primes 100000 100050) => 100003 (0.0742ms), 100019 (0.0720ms), 100043 (0.0729ms) ==> avg time = 0.073ms and avg time of 1.22 = 0.1023ms
 
 
-; (search-for-primes 1000000 1000050) => 1000003 (0.221s), 1000033 (0.219s), 1000037 (0.219s) ==> avg time = 0.220s and avg time of 1.22 = 0.356s
+; (search-for-primes 1000000 1000050) => 1000003 (0.221ms), 1000033 (0.219ms), 1000037 (0.219ms) ==> avg time = 0.220ms and avg time of 1.22 = 0.356ms
