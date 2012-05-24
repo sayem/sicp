@@ -8,21 +8,27 @@
 (define (x-point p) (car p))
 (define (y-point p) (cdr p))
 
-(define (print-point p)
-  (display "(")
-  (display (x-point p))
-  (display ",")
-  (display (y-point p))
-  (display ")")
-  (newline))
+(define (rectangle x y) (cons x y))
 
-(define (rectangle a b)
-  cons ((make-segment a (make-point (car a) (cdr b))) (make-segment b c))
-  cons ((make-segment c d) (make-segment d a)))
+(define (width r)
+   (abs (- (x-point (car r)) (x-point (cdr r)))))
 
-(define (rect-perim rectangle)
-  (+ (* 2 car (car rectangle)) (* 2 cdr (car rectangle))))
+(define (height r)
+   (abs (- (y-point (car r)) (y-point (cdr r)))))
 
-(define (rect-perim rectangle)
-  (+ (* 2 car (car rectangle)) (* 2 cdr (car rectangle))))
+(define (perimeter r)
+   (* 2 (+ (width r) (height r))))
 
+(define (area r)
+   (* (width r) (height r)))
+
+
+; (define x (make-point 2 5))
+; (define y (make-point 8 18))
+; (define r (rectangle x y))
+
+; (width r) = 6
+; (height r) = 13
+
+; (perimeter r) = 38
+; (area r) = 78
